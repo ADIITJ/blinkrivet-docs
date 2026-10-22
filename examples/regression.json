@@ -1,0 +1,30 @@
+{
+  "name": "intentional-regression",
+  "adapter": "display-web",
+  "profile": "rayban-display",
+  "url": "http://127.0.0.1:4173/?broken=1",
+  "timeout": 5000,
+  "steps": [
+    {
+      "press": "ArrowDown"
+    },
+    {
+      "assertFocus": "Start"
+    },
+    {
+      "press": "Enter"
+    },
+    {
+      "assertText": "Ready for your next idea."
+    },
+    {
+      "audit": "overflow"
+    },
+    {
+      "audit": "focus"
+    },
+    {
+      "audit": "labels"
+    }
+  ]
+}

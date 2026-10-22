@@ -1,0 +1,18 @@
+{
+  "name": "blinkrivet-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public documentation and consumer examples for Blinkrivet",
+  "engines": {
+    "node": ">=22.14"
+  },
+  "scripts": {
+    "demo": "node examples/demo/server.mjs",
+    "check": "node scripts/check-docs.mjs",
+    "test": "node scripts/verify-examples.mjs"
+  },
+  "devDependencies": {
+    "@adiitj/blinkrivet": "0.2.1"
+  }
+}

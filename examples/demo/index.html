@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blinkrivet · Consumer demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif}main{height:100dvh;min-height:480px;max-width:720px;margin:auto;padding:42px 38px;display:flex;flex-direction:column;gap:24px}.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:17px;font-weight:700;letter-spacing:3px}.connection{font-size:16px;color:#ddd}.line{height:1px;background:#464646}.eyebrow{font-size:15px;letter-spacing:3px;color:#bdbdbd;margin:8px 0 12px}h1{font-size:48px;line-height:1.08;letter-spacing:-2px;margin:0;max-width:470px}.summary{font-size:21px;line-height:1.45;color:#ddd;margin:18px 0 0;max-width:440px}.status{border:1px solid #555;border-radius:16px;padding:20px;font-size:21px;line-height:1.35}.controls{display:flex;gap:16px;margin-top:auto}button{font:700 21px Arial;padding:18px 30px;border:1px solid #999;border-radius:30px;color:white;background:black;min-width:140px}button:focus-visible,button:focus{outline:3px solid white;outline-offset:5px}button:hover{background:#222}.footer{font-size:15px;color:#bbb;display:flex;justify-content:space-between}@media(max-height:530px){main{padding:24px;gap:16px}h1{font-size:40px}.summary{font-size:19px}.status{padding:14px}}
+</style>
+</head>
+<body>
+<main>
+<header class="top"><span class="brand">BLINKRIVET</span><span class="connection" id="connection" role="status">Connected</span></header>
+<div class="line"></div>
+<section><p class="eyebrow">A SMALL SCREEN. A CLEAR NEXT STEP.</p><h1>Make room<br>for your next idea.</h1><p class="summary">A tiny consumer app for testing focus, state changes, and visible evidence.</p></section>
+<div class="status" id="session" role="status">Your session is waiting.</div>
+<div class="controls"><button id="start">Start</button><button id="reset">Reset</button></div>
+<footer class="footer"><span>↑ ↓ Move · Enter Select</span><span>Browser demo</span></footer>
+</main>
+<script>
+const controls=[document.querySelector('#start'),document.querySelector('#reset')];
+document.addEventListener('keydown',event=>{if(!['ArrowDown','ArrowUp','ArrowRight','ArrowLeft'].includes(event.key))return;event.preventDefault();const i=controls.indexOf(document.activeElement);const backwards=['ArrowUp','ArrowLeft'].includes(event.key);const next=i<0?(backwards?controls.length-1:0):(i+(backwards?-1:1)+controls.length)%controls.length;controls[next].focus()});
+controls[0].addEventListener('click',()=>{document.querySelector('#session').textContent=new URLSearchParams(location.search).has('broken')?'Preparing your session…':'Ready for your next idea.'});
+controls[1].addEventListener('click',()=>{document.querySelector('#session').textContent='Your session is waiting.'});
+function connection(){document.querySelector('#connection').textContent=navigator.onLine?'Connected':'Offline'}
+addEventListener('online',connection);addEventListener('offline',connection);connection();
+</script>
+</body>
+</html>

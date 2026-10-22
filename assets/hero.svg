@@ -1,0 +1,201 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1280"
+  height="540"
+  viewBox="0 0 1280 540"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">
+    Blinkrivet — tiny screens, serious regression evidence
+  </title>
+  <desc id="desc">
+    A purple and cyan illustration of a wearable display beside a terminal.
+    Local CLI, reviewed baselines, JSON, JUnit and HTML evidence. Decorative
+    illustration, not a test result.
+  </desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#12152f" />
+      <stop offset="1" stop-color="#071f2d" />
+    </linearGradient>
+    <linearGradient id="accent">
+      <stop stop-color="#c4a0ff" />
+      <stop offset="1" stop-color="#64e5f3" />
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#7c3aed" stop-opacity=".32" />
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#b6d2ff" stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect width="1280" height="540" rx="24" fill="url(#bg)" />
+  <rect width="1280" height="540" rx="24" fill="url(#grid)" />
+  <ellipse cx="340" cy="140" rx="440" ry="290" fill="url(#glow)" />
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <rect
+      x="52"
+      y="43"
+      width="186"
+      height="28"
+      rx="14"
+      fill="#292044"
+      stroke="#8c63d2"
+    />
+    <text
+      x="145"
+      y="62"
+      text-anchor="middle"
+      fill="#dfcaff"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="1.4"
+    >
+      META DISPLAY WEB QA
+    </text>
+    <text
+      x="50"
+      y="150"
+      fill="#f5f4ff"
+      font-size="76"
+      font-weight="800"
+      letter-spacing="-3"
+    >
+      blinkrivet
+      <tspan fill="#6ce8ec">.</tspan>
+    </text>
+    <text x="54" y="197" fill="url(#accent)" font-size="29" font-weight="650">
+      Tiny screens. Serious evidence.
+    </text>
+    <text x="54" y="238" fill="#b8c6df" font-size="18">
+      Catch focus traps, visual drift and broken states.
+    </text>
+    <text x="54" y="267" fill="#b8c6df" font-size="18">
+      Run locally. Review the pixels. Keep the proof.
+    </text>
+    <g font-size="13" font-weight="700">
+      <rect
+        x="54"
+        y="302"
+        width="102"
+        height="31"
+        rx="8"
+        fill="#113c40"
+        stroke="#3dcfc5"
+      />
+      <text x="105" y="322" text-anchor="middle" fill="#8cf4e6">SDK + CLI</text>
+      <rect
+        x="168"
+        y="302"
+        width="128"
+        height="31"
+        rx="8"
+        fill="#30254f"
+        stroke="#a78bfa"
+      />
+      <text x="232" y="322" text-anchor="middle" fill="#ddcaff">
+        PLAYWRIGHT
+      </text>
+      <rect
+        x="308"
+        y="302"
+        width="117"
+        height="31"
+        rx="8"
+        fill="#413320"
+        stroke="#e3ad51"
+      />
+      <text x="366" y="322" text-anchor="middle" fill="#ffdb97">
+        APACHE 2.0
+      </text>
+    </g>
+    <rect
+      x="54"
+      y="367"
+      width="545"
+      height="103"
+      rx="13"
+      fill="#0b1425"
+      stroke="#33445f"
+    />
+    <text x="74" y="393" fill="#879cb9" font-family="monospace" font-size="12">
+      YOUR APP → SCENARIO → REVIEWABLE ARTIFACTS
+    </text>
+    <text x="74" y="423" fill="#7eead8" font-family="monospace" font-size="15">
+      $ weartest run scenario.yaml
+    </text>
+    <text x="74" y="448" fill="#c5d0e3" font-family="monospace" font-size="13">
+      PNG diffs · focus checks · performance budgets
+    </text>
+    <g transform="translate(675 60)">
+      <rect width="551" height="411" rx="20" fill="#0a1021" stroke="#414b6a" />
+      <rect x="1" y="1" width="549" height="39" rx="19" fill="#1d2640" />
+      <path d="M1 21H550V40H1Z" fill="#1d2640" />
+      <circle cx="23" cy="21" r="5" fill="#ff859f" />
+      <circle cx="41" cy="21" r="5" fill="#f5cf75" />
+      <circle cx="59" cy="21" r="5" fill="#6ce4b0" />
+      <text x="276" y="26" text-anchor="middle" fill="#a6b9d8" font-size="12">
+        WearTest / illustration
+      </text>
+      <rect
+        x="28"
+        y="64"
+        width="240"
+        height="240"
+        rx="14"
+        fill="#03070e"
+        stroke="#56dcd5"
+        stroke-width="2"
+      />
+      <text x="48" y="93" fill="#7e92b0" font-size="11" letter-spacing="1.5">
+        DISPLAY PROFILE
+      </text>
+      <text x="48" y="128" fill="#f4f7fc" font-size="22" font-weight="700">
+        Next cue
+      </text>
+      <text x="48" y="153" fill="#b8c5da" font-size="13">
+        A small screen. A clear path.
+      </text>
+      <rect
+        x="46"
+        y="176"
+        width="204"
+        height="43"
+        rx="8"
+        fill="#153d43"
+        stroke="#71f3de"
+        stroke-width="2"
+      />
+      <text x="65" y="203" fill="#befff0" font-size="15" font-weight="700">
+        Start rehearsal
+      </text>
+      <rect x="48" y="233" width="200" height="40" rx="8" fill="#1a2336" />
+      <text x="65" y="259" fill="#bac9df" font-size="14">Browse cues</text>
+      <g transform="translate(291 78)" font-family="monospace" font-size="13">
+        <text y="0" fill="#bba1ff">ASSERT &amp; INSPECT</text>
+        <text y="41" fill="#76ead4">↳ focus traversal</text>
+        <text y="74" fill="#76ead4">↳ visual regions</text>
+        <text y="107" fill="#76ead4">↳ offline recovery</text>
+        <text y="140" fill="#76ead4">↳ resource limits</text>
+        <text y="181" fill="#f0c77d">review → accept</text>
+        <text y="210" fill="#95aac9">baseline policy</text>
+      </g>
+      <path d="M28 328H523" stroke="#2b3853" />
+      <g font-size="12" font-weight="700" text-anchor="middle">
+        <rect x="28" y="348" width="102" height="32" rx="8" fill="#282140" />
+        <text x="79" y="369" fill="#d2b6ff">JSON</text>
+        <rect x="142" y="348" width="102" height="32" rx="8" fill="#153440" />
+        <text x="193" y="369" fill="#82dfed">JUnit</text>
+        <rect x="256" y="348" width="102" height="32" rx="8" fill="#3e2d34" />
+        <text x="307" y="369" fill="#ffb4ba">HTML</text>
+        <rect x="370" y="348" width="153" height="32" rx="8" fill="#35321e" />
+        <text x="446" y="369" fill="#f5d988">PNG + DIFF</text>
+      </g>
+    </g>
+    <text x="54" y="510" fill="#8396b4" font-size="12">
+      INDEPENDENT DEVELOPER TOOLING · BROWSER APPROXIMATION · NO SIGNUP
+    </text>
+  </g>
+</svg>
